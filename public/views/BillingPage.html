@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<link rel="stylesheet" href="../styles/billing-page.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<script src="../scripts/billing.js"></script>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div class="header">
+        <h2>
+            Billing Page
+        </h2>
+    </div>
+    <div id="detailsArea">
+        <h3>1. Fill your details:</h3>
+        <div class="billField">
+            <label for="formFirstName">First Name</label>
+            <input type="text" id="formFirstName"/>
+            <label id="firstNameErrorMsg" class="errorMsg" style="display:none;">
+                *Required
+            </label>
+        </div>
+        <div class="billField">
+            <label for="formLastName">Last Name</label>
+            <input type="text" id="formLastName" />
+            <label id="lastNameErrorMsg" class="errorMsg" style="display:none;">
+                *Required
+            </label>
+        </div>
+        <div class="billField">
+            <label for="formEmail">Email</label>
+            <input type="text" id="formEmail"/>
+            <label id="emailErrorMsg" class="errorMsg" style="display:none;">
+                *Required
+            </label>
+            <label id="emailNotValidMsg" class="errorMsg" style="display:none;">
+                *Email not valid
+            </label>
+        </div>
+        <div class="billField">
+            <label for="formCountry">Country</label>
+            <input type="text" id="formCountry" />
+            <label id="countryErrorMsg" class="errorMsg" style="display:none;">
+                *Required
+            </label>
+        </div>
+        <div id="chargeBtn">
+            Next: <span>Payment</span>
+        </div>
+    </div>
+</body>
+</html>

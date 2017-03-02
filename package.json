@@ -1,0 +1,22 @@
+{
+  "name": "ecommerce-express-app",
+  "version": "0.0.0",
+  "description": "EcommerceExpressApp",
+  "main": "server.js",
+  "author": {
+    "name": "avivar"
+  },
+  "dependencies": {
+    "colors": "^1.1.2",
+    "cuid": "^1.3.8",
+    "express": "^4.15.0",
+    "leveldown": "^1.6.0",
+    "levelup": "^1.3.3",
+    "nodemailer": "^3.1.4",
+    "paypal-rest-sdk": "^1.7.1"
+  },
+  "scripts": {
+    "build-billing": "browserify public/scripts/billing.js > public/scripts/bundles/billing-bundle.js",
+    "build-records": "browserify public/scripts/records.js > public/scripts/bundles/records-bundle.js"
+  }
+}
